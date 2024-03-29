@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('layout.main');
 });
 
+Route::get('/home', function () {
+    return view('home');
+});
+
 Route::get('/jabatan', [MainController::class, 'view_jabatan']);
 Route::get('/gaji', [MainController::class, 'view_gaji']);
 Route::get('/presensi', [MainController::class, 'view_presensi']);
